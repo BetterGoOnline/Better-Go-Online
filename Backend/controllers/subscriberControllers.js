@@ -1,5 +1,5 @@
 import Subscriber from '../models/subscriberModel.js';
-import { sendThankYouSubscriberEmail } from '../config/brevoEmailService.js';
+import { sendThankYouSubscriberEmail } from '../config/emailService.js';
 
 // Create a new subscriber
 export const createSubscriber = async (req, res) => {

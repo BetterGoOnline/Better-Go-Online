@@ -1,5 +1,5 @@
 import express from 'express';
-import { createSubscriber, getAllSubscribers, deleteSubscriber } from '../controllers/subscriberController.js';
+import { createSubscriber, getAllSubscribers, deleteSubscriber } from '../controllers/subscriberControllers.js';
 
 const router = express.Router();
 

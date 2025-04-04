@@ -13,8 +13,10 @@ app.use(express.json());
 
 connectDB();
 
-import subscriberRoutes from './routes/subscriberRoute.js';
+import subscriberRoutes from './routes/subscriberRoutes.js';
+import contactRoutes from './routes/contactRoutes.js';
 app.use('/api/subscribers', subscriberRoutes);
+app.use('/api/contact', contactRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
